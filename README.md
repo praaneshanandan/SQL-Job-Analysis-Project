@@ -30,23 +30,25 @@ The project consists of several key analyses, each designed to answer specific q
 ### 1. Top Paying Jobs for Business Analysts
 **File**: `1_Top Paying Jobs for a Role.sql`
 
-Identifies the top 10 highest-paying remote Business Analyst positions. Key findings:
-- Highest salary: $220,000 (Lead Business Intelligence Engineer at Noom)
-- Top companies include Noom, Uber, Multicoin Capital, and Harnham
-- Average salaries range from $134,550 to $220,000 for top positions
+The 1_Top-Paying-Jobs-for-a-Role.sql file identifies the highest-paying Business Analyst positions available remotely. This foundational query filters for positions with specified salaries and remote work options, revealing salary ranges from $134,550 to $220,000. The analysis shows that Noom leads the market with their Lead Business Intelligence Engineer position at $220,000, followed by Uber's marketplace dynamics role at $214,500.
+
+![f68104cb_ckmhgg](https://github.com/user-attachments/assets/0633803f-0559-4ba3-9e85-bd219e0c4b93)
+
+The data reveals that technology companies dominate the premium salary tier, with 60% of top-paying positions coming from tech sector organizations. Notably, Multicoin Capital appears twice in the top rankings with identical $200,000 analyst positions, indicating strong demand for crypto/blockchain analytics expertise.
 
 ### 2. Skills Required for Top-Paying Jobs
 **File**: `2_Top_Paying_Job_Skills.sql`
 
-Analyzes the specific skills required for the highest-paying positions:
-- **SQL** and **Python** are consistently required for top-paying roles
-- **Excel** and **Tableau** remain important for business intelligence positions
-- Specialized tools like **Looker** and **Chef** appear in premium roles
+The 2_Top_Paying_Job_Skills.sql query maps specific technical requirements to the highest-paying roles. This analysis reveals that Python emerges as the universal requirement, appearing in 30% of top-tier positions (3 out of 10 roles). SQL follows as the second most common skill, present in 20% of premium positions.
+
+![8a6550b1_djohm7](https://github.com/user-attachments/assets/cae5f4b7-4050-4b6c-ad0d-e3916c47e755)
+
+The skills distribution shows a clear hierarchy: Python dominates as the essential programming language, while SQL remains crucial for database operations. Specialized tools like Tableau, Looker, and even DevOps technologies like Chef appear in the highest-paying positions, indicating the premium value of comprehensive technical versatility.
 
 ### 3. Most In-Demand Skills
 **File**: `3_Most In Demand Skill for a Role.sql`
 
-Identifies the most frequently requested skills across all Business Analyst positions:
+The 3_Most-In-Demand-Skill-for-a-Role.sql query provides a broader market context by analyzing all Business Analyst positions. SQL leads market demand with 17,372 job postings, followed closely by Excel with 17,134 postings. This creates an interesting dynamic where the most demanded skill (SQL) doesn't necessarily command the highest individual salaries.
 
 | Rank | Skill | Job Count |
 |------|-------|-----------|
@@ -56,22 +58,23 @@ Identifies the most frequently requested skills across all Business Analyst posi
 | 4 | Power BI | 9,251 |
 | 5 | Python | 8,097 |
 
+The analysis reveals that Tableau and Power BI represent the visualization battleground, with 9,324 and 9,251 job postings, respectively. Python rounds out the top five with 8,097 postings, demonstrating strong but not overwhelming demand relative to traditional tools.
+
 ### 4. Top Paying Skills
 **File**: `4_Top Paying Skills.sql`
 
-Analyzes average salaries by skill to identify the highest-paying competencies:
-- **Chef**: $220,000 average salary
-- **NumPy**: $157,500 average salary
-- **Ruby**: $150,000 average salary
-- **Hadoop**: $139,201 average salary
+The 4_Top-Paying-Skills.sql query identifies which individual skills command the highest average salaries. Surprisingly, Chef (a DevOps automation tool) tops the list at $220,000 average salary, though this reflects a single high-paying position skewing the average. More representative high-paying skills include NumPy ($157,500), Ruby ($150,000), and Hadoop ($139,201).
+
+This analysis reveals the premium value of specialized technical skills, particularly in big data, machine learning, and DevOps domains. Traditional business intelligence tools like Looker ($110,581) and Pandas ($110,558) also command significant premiums over general business skills.
 
 ### 5. Optimal Skills Analysis
 **File**: `5_Optimal Skills.sql`
 
-Combines demand and salary data to identify skills that offer the best combination of high demand and high pay:
-- **Hadoop**: High salary ($139,201) with solid demand (14 jobs)
-- **Python**: Strong balance with $104,277 average salary and high demand (143 jobs)
-- **Snowflake**: $112,543 average salary with growing demand (34 jobs)
+The 5_Optimal-Skills.sql query represents the most sophisticated analysis, balancing both salary potential and job market demand. This query filters for skills with statistical significance (>10 job postings) and ranks them by optimal combination of compensation and opportunity.
+
+![580c7462_wtp7td](https://github.com/user-attachments/assets/1bc65439-3420-4ac9-bc83-9cef749b7e80)
+
+The scatter plot visualization reveals four distinct quadrants of opportunity: high-demand/high-salary skills like Python and R represent the optimal investment targets. Meanwhile, specialized skills like Hadoop and Phoenix offer high salaries but limited opportunities, making them strategic specialization choices rather than foundational skills.
 
 ## Database Structure
 
@@ -81,6 +84,8 @@ The project uses four main tables:
 - **company_dim**: Company information and details
 - **skills_dim**: Skill definitions and categories
 - **skills_job_dim**: Bridge table connecting jobs to required skills
+
+Link for the dataset: https://drive.google.com/drive/folders/1L2baoFhiVQTXS3YsR_HGC4rdbrfur5t6?usp=sharing
 
 ## What I Learned
 
