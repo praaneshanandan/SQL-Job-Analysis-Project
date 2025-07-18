@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project analyzes the job market for Business Analysts using SQL to uncover insights about top-paying positions, in-demand skills, and optimal career development strategies. Through comprehensive data analysis, this project provides actionable insights for professionals looking to advance their careers in business analysis.
+This project analyzes the job market using SQL to uncover insights about top-paying positions, in-demand skills, and optimal career development strategies. Through comprehensive data analysis, this project provides actionable insights for professionals looking to advance their careers in business analysis. In this project the results are focused on mainly a Business Analyst Role.
 
 ## Background
 
